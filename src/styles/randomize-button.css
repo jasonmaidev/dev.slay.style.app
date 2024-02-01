@@ -1,0 +1,105 @@
+.randomize-button {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  padding: 1em 6%;
+  border: 0px solid #FF0072;
+  border-radius: 82px;
+  position: relative;
+  box-shadow: 8px 8px 16px #d7d7ed, -4px -4px 16px #ffffff;
+  color: #484850;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  transition: 0.2s ease all;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.randomize-button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  border-radius: 82px;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: linear-gradient(45deg, #00ffd0, #1affe7, #35e1ff, #bd4bff, #ff00a2);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.randomize-button:hover,
+.randomize-button:focus {
+  color: white;
+  border-radius: 82px;
+}
+
+.randomize-button:hover:before,
+.randomize-button:focus:before {
+  transition: 0.8s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.randomize-button:active {
+  transform: scale(0.9);
+  border-radius: 82px;
+}
+
+.randomize-button-dark {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  padding: 1em 6%;
+  border: 0px solid #FF0072;
+  border-radius: 82px;
+  position: relative;
+  box-shadow: 8px 8px 16px #131315, -4px -4px 16px #212125;
+  color: #1affe7;
+  background-color: #18181b;
+  text-decoration: none;
+  transition: 0.2s ease all;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.randomize-button-dark:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  border-radius: 82px;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: linear-gradient(45deg, #00ffd0, #1affe7, #35e1ff, #bd4bff, #ff00a2);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.randomize-button-dark:hover,
+.randomize-button-dark:focus {
+  color: white;
+  border-radius: 82px;
+}
+
+.randomize-button-dark:hover:before,
+.randomize-button-dark:focus:before {
+  transition: 0.8s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.randomize-button-dark:active {
+  transform: scale(0.9);
+  border-radius: 82px;
+}

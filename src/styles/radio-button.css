@@ -1,0 +1,104 @@
+.RadioButton {
+  margin: auto;
+  z-index: 1;
+}
+.RadioButton input {
+  opacity: 0;
+  display: none;
+}
+.RadioButton input:checked + label:before {
+  border-color: #1affe7;
+  animation: ripple 0.2s linear forwards;
+}
+.RadioButton input:checked + label:after {
+  transform: scale(1);
+}
+.RadioButton label:hover {
+  opacity: 0.5;
+}
+.RadioButton input[type=radio]:checked + label {
+  border: 1px solid #aaaac1;
+  opacity: 1;
+}
+.RadioButton label {
+  padding: 0.75rem 1rem 0.5rem 1rem;
+  font-family: sans-serif, Arial;
+  border-radius: 1rem;
+  cursor: pointer;
+  opacity: 1;
+}
+.RadioButton label:before, .RadioButton label:after {
+  display: none;
+  content: "";
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transition-property: transform, border-color;
+}
+.RadioButton label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaaac1;
+}
+.RadioButton label:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: #1affe7;
+}
+
+.MobileRadioButton {
+  margin: auto;
+  z-index: 1;
+}
+.MobileRadioButton input {
+  opacity: 0;
+  display: none;
+}
+.MobileRadioButton input:checked + label:before {
+  border-color: #1affe7;
+  animation: ripple 0.2s linear forwards;
+}
+.MobileRadioButton input:checked + label:after {
+  transform: scale(1);
+}
+.MobileRadioButton label:hover {
+  opacity: 1;
+}
+.MobileRadioButton input[type=radio]:checked + label {
+  border: 1px solid #aaaac1;
+  opacity: 1;
+}
+.MobileRadioButton label {
+  padding: 0.5rem;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border-radius: 1rem;
+  cursor: pointer;
+  opacity: 1;
+}
+.MobileRadioButton label:before, .MobileRadioButton label:after {
+  display: none;
+  content: "";
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transition-property: transform, border-color;
+}
+.MobileRadioButton label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaaac1;
+}
+.MobileRadioButton label:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: #1affe7;
+}

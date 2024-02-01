@@ -1,0 +1,131 @@
+$md-radio-checked-color: #1affe7;
+$md-radio-border-color: #aaaac1;
+$md-radio-border-color-dark: #d5d5e3;
+$md-radio-size: 20px;
+$md-radio-checked-size: 10px;
+$md-radio-ripple-size: 15px;
+
+.RadioButton {
+  margin: auto;
+  z-index: 1;
+
+  input {
+    opacity: 0;
+    display: none;
+
+    &:checked+label:before {
+      border-color: $md-radio-checked-color;
+      animation: ripple 0.2s linear forwards;
+    }
+
+    &:checked+label:after {
+      transform: scale(1);
+    }
+  }
+
+  label:hover {
+    opacity: 0.5;
+  }
+
+  input[type="radio"]:checked+label {
+    border: 1px solid $md-radio-border-color;
+    opacity: 1;
+  }
+
+  label {
+    padding: 0.75rem 1rem 0.5rem 1rem;
+    font-family: sans-serif, Arial;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 1;
+
+    &:before,
+    &:after {
+      display: none;
+      content: '';
+      border-radius: 50%;
+      transition: all .3s ease;
+      transition-property: transform, border-color;
+    }
+
+    &:before {
+      left: 0;
+      top: 0;
+      width: $md-radio-size;
+      height: $md-radio-size;
+      border: 2px solid $md-radio-border-color;
+    }
+
+    &:after {
+      top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      width: $md-radio-checked-size;
+      height: $md-radio-checked-size;
+      transform: scale(0);
+      background: $md-radio-checked-color;
+    }
+  }
+}
+
+.MobileRadioButton {
+  margin: auto;
+  z-index: 1;
+
+  input {
+    opacity: 0;
+    display: none;
+
+    &:checked+label:before {
+      border-color: $md-radio-checked-color;
+      animation: ripple 0.2s linear forwards;
+    }
+
+    &:checked+label:after {
+      transform: scale(1);
+    }
+  }
+
+  label:hover {
+    opacity: 1;
+  }
+
+  input[type="radio"]:checked+label {
+    border: 1px solid $md-radio-border-color;
+    opacity: 1;
+  }
+
+  label {
+    padding: 0.5rem;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 1;
+
+    &:before,
+    &:after {
+      display: none;
+      content: '';
+      border-radius: 50%;
+      transition: all .3s ease;
+      transition-property: transform, border-color;
+    }
+
+    &:before {
+      left: 0;
+      top: 0;
+      width: $md-radio-size;
+      height: $md-radio-size;
+      border: 2px solid $md-radio-border-color;
+    }
+
+    &:after {
+      top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      width: $md-radio-checked-size;
+      height: $md-radio-checked-size;
+      transform: scale(0);
+      background: $md-radio-checked-color;
+    }
+  }
+}

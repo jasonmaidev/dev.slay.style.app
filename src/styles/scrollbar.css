@@ -1,0 +1,39 @@
+.apparels-scrollbar {
+  width: 100%;
+  max-height: 82vh;
+}
+.apparels-scrollbar .apparels-content {
+  width: 100%;
+  max-height: 82vh;
+  padding: 0 0.5rem;
+}
+
+.laptop-apparels-scrollbar {
+  width: 100%;
+  max-height: 78vh;
+}
+.laptop-apparels-scrollbar .laptop-apparels-content {
+  width: 100%;
+  max-height: 78vh;
+  padding: 0 0.5rem;
+}
+
+.mobile-apparels-scrollbar {
+  width: 100%;
+  max-height: 70vh;
+}
+.mobile-apparels-scrollbar .mobile-apparels-content {
+  width: 100%;
+  max-height: 70vh;
+  padding: 0 0.5rem;
+}
+
+.styles-scrollbar {
+  width: 100%;
+  max-height: 82vh;
+}
+.styles-scrollbar .styles-content {
+  width: 100%;
+  max-height: 82vh;
+  padding: 0 10%;
+}
